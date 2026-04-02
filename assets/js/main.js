@@ -291,3 +291,30 @@
   new PureCounter();
 
 })()
+
+ new Swiper('.portfolio-slider', {
+    speed: 600,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    },
+    slidesPerView: 1,
+    spaceBetween: 20,
+    pagination: {
+      el: '.portfolio-slider .swiper-pagination',
+      clickable: true
+    },
+    navigation: {
+      nextEl: '.portfolio-slider .swiper-button-next',
+      prevEl: '.portfolio-slider .swiper-button-prev'
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2
+      },
+      1200: {
+        slidesPerView: 3
+      }
+    }
+  });
